@@ -4,7 +4,7 @@ function getPage(){
 
    // var_dump($_GET);
 
-    $lesPages['acceuil'] = "acceuilControleur";
+    $lesPages['accueil'] = "accueilControleur";
     $lesPages['contact'] = "contactControleur";
     $lesPages['mentions'] = "mentionsLegales";
     $lesPages['a propos'] = "aPropos";
@@ -13,12 +13,12 @@ function getPage(){
     if(isset($_GET['page'])) {
         $page = $_GET['page'];
     }else {
-        $page = 'acceuil';
+        $page = 'accueil';
     } 
     if (isset($lesPages[$page])){
         $contenu = $lesPages[$page];
     }else {
-        $contenu = $lesPages['acceuil'];
+        $contenu = $lesPages['accueil'];
     }
 
     return $contenu;

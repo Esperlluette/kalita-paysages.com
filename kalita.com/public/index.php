@@ -6,4 +6,4 @@ require_once '../config/routes.php';
 $loader = new \Twig\Loader\FilesystemLoader('../src/vue/');
 $twig = $twig = new \Twig\Environment($loader, []);
 $contenu = getPage();
-$contenu();
+$contenu($twig);

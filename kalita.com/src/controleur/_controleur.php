@@ -1,3 +1,3 @@
 <?php
 
-require_once 'acceuilControleur.php';
+require_once 'accueilControleur.php';
