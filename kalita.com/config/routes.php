@@ -8,6 +8,7 @@ function getPage(){
     $lesPages['contact'] = "contactControleur";
     $lesPages['mentions'] = "mentionsLegales";
     $lesPages['a propos'] = "aPropos";
+    $lesPages['connexion'] = "connexionControleur";
 
 
     if(isset($_GET['page'])) {

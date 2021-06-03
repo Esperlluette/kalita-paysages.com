@@ -1,0 +1,33 @@
+{% extends "base.html.twig" %}
+
+{% block title %}
+	Connexion
+{% endblock %}
+{% block titlejumbotron %}
+	Cette page est réservée a l'administrateur
+{% endblock %}
+{% block jumbotroncontent %}{% endblock %}
+{% block contenu %}
+
+
+	<form style="margin:15px;" >
+		<fieldset>
+			<legend>Connexion</legend>
+			
+			<div class="form-group">
+				<label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Adresse Email">
+			</div>
+			<div class="form-group">
+				<label for="exampleInputPassword1" class="form-label mt-4">Mot de passe</label>
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+			</div>
+
+
+			
+        <button type="button" class="btn btn-outline-success">Connexion</button>
+		</fieldset>
+	</form>
+
+
+{% endblock %}

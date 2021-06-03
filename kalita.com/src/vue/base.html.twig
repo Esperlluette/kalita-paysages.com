@@ -4,9 +4,9 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-		<linl rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-		
+			<link rel="stylesheet" href="css/style.css">
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 			<title>
 				{% block title %}
 					Kalita-Paysage.com
@@ -19,7 +19,7 @@
 			{% block entete %}
 				<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
 					<div class="container-fluid" style="height:75px;">
-						<a class="navbar-brand" href="#">
+						<a class="navbar-brand" href="index.php?page=accueil">
 							<h4>Bienvenue sur kalita-Paysage.com</h4>
 						</a>
 						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,17 +44,36 @@
 						</div>
 					</div>
 
-					<div></div>
+					<div class="collapse navbar-collapse navItem1" id="navbarColor02">
+						<ul class="navbar-nav me-auto">
+							<li class="nav-item">
+								<a class="nav-link active" href="index.php?page=connexion">Connexion</a>
+							</li>
+						</ul>
+					</div>
 				</nav>
 			{% endblock %}
 			{% block navmenu %}
-			<div class="container-fluid">
-
-				
-
-			</div>
+				<div class="container-fluid"></div>
 
 			{% endblock %}
+
+			<div class="jumbotron">
+				<h1 class="display-4">
+					{% block titlejumbotron %}
+						Kalita-paysage
+					{% endblock %}
+				</h1>
+				{% block jumbotroncontent %}
+					<p class="lead" style="padding-top:12px;">Jeune entreprise dynamique située à Duisans, près d'Arras, nous mettons à votre service nos compétences pour embellir les paysages qui vous entourent.</p>
+					<hr class="my-4">
+					<p>Avec l'agrément Services à la Personne, bénéficiez d'une réduction d'impôt sur le revenu à hauteur de 50% sur de petits travaux de jardinage. Cliquez ici pour plus d'informations sur le SAP.</p>
+					<p class="lead">
+						<a class="btn btn-info btn-lg" href="index.php?page=a propos" role="button">En savoir plus</a>
+					</p>
+				{% endblock %}
+			</div>
+
 			{% block contenu %}{% endblock %}
 			{% block footer %}{% endblock %}
 
