@@ -10,6 +10,7 @@ function getPage(){
     $lesPages['a propos'] = "aPropos";
     $lesPages['connexion'] = "connexionControleur";
     $lesPages['mails'] ="mailsControleur";
+    $lesPages['inscription']= "inscriptionControleur";
 
 
     if(isset($_GET['page'])) {

@@ -14,18 +14,18 @@
 		<fieldset>
 			<legend>Connexion</legend>
 			
-			<div class="form-group">
-				<label for="exampleInputEmail1" class="form-label mt-4">Email address</label>
-				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Adresse Email">
+			<div class="form-group" action="index.php?page=connexion" method="post" enctype="application/x-www-formurlencoded">
+				<label for="InputEmail" class="form-label mt-4">Email address</label>
+				<input type="email" class="form-control" name ="inputEmail" id="InputEmail" aria-describedby="emailHelp" placeholder="Adresse Email">
 			</div>
 			<div class="form-group">
-				<label for="exampleInputPassword1" class="form-label mt-4">Mot de passe</label>
-				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Mot de passe">
+				<label for="InputPassword" class="form-label mt-4">Mot de passe</label>
+				<input type="password" class="form-control" name ="inputPassword" id="InputPassword" placeholder="Mot de passe">
 			</div>
 
 
 			
-        <button type="button" class="btn btn-outline-success">Connexion</button>
+        <button type="button" class="btn btn-outline-success" name="btn_connexion">Connexion</button>
 		</fieldset>
 	</form>
 
